@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: teste-pod
+  labels:
+    app: teste-pod
+spec:
+  containers:
+    - name: teste-pod-nginx
+      image: nginx:latest 
+      ports:
+        - containerPort: 80
